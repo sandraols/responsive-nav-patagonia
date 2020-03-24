@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patagonia</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div id="nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content">
+                <li><a class="nav__link" href="#">Works</a></li>
+                <li><a class="nav__link" href="#">Services</a></li>
+                <li><a class="nav__link" href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list" id="nav-list">
+                <li><a class="nav__link" href="#">Works</a></li>
+                <li><a class="nav__link" href="#">Services</a></li>
+                <li><a class="nav__link" href="#">Contacts</a></li>
+                <span class="burger" id="burger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="first__section">
+            <h1 class="title">Patagonia</h1>
+            <p class="paragraph">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
+                Donec viverra eleifend lacus, vitae ullamcor.
+            </p>
+            <div class="img__container"></div>
+        </section>
+    </main>
+    <script>
+        function openNav() {
+            document.getElementById("nav").style.height = "100%";
+            document.getElementById("burger").style.opacity = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("nav").style.height = "0%";
+            document.getElementById("burger").style.opacity = "1";
+        }
+    </script>
+</body>
+</html>
